@@ -6,6 +6,12 @@ A production-grade MLOps pipeline designed for real-time credit card fraud detec
 The pipeline is built and evaluated on the benchmark European cardholders credit card fraud dataset:
 * **Dataset Link:** [Credit Card Fraud Detection on Kaggle](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud)
 * **Description:** Contains anonymized credit card transactions made by European cardholders. Features `V1` to `V28` are PCA-transformed features due to confidentiality, along with `Time`, `Amount`, and the target label `Class` (1 for fraud, 0 for genuine).
+* 
+### Application Dashboard
+
+<p align="center">
+  <img src="./dashboard.png" alt="dashboard image" width="700"/>
+</p>
 
 ##  Table of Contents
 
