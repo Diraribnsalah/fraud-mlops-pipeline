@@ -12,7 +12,7 @@ def test_health_check():
 def test_prediction_endpoint():
      
     dummy_features = [0.0] * 30
-    with testClient(app) as client :
+    with TestClient(app) as client :
        response = client.post("/predict", json={"features": dummy_features})
        assert response.status_code == 200
        data = response.json()
