@@ -12,10 +12,10 @@ def test_health_check():
 def test_prediction_endpoint():
      
     dummy_features = [0.0] * 30
-    response = client.post("/predict", json={"features": dummy_features})
-    
-    assert response.status_code == 200
-    data = response.json()
-    assert "is_fraud" in data
-    assert "fraud_probability" in data
-    assert "latency_ms" in data
+    with testClient(app) as client :
+       response = client.post("/predict", json={"features": dummy_features})
+       assert response.status_code == 200
+       data = response.json()
+       assert "is_fraud" in data
+       assert "fraud_probability" in data
+       assert "latency_ms" in data
