@@ -1,6 +1,6 @@
 #  Real-Time Fraud Detection MLOps Pipeline
 
-A production-grade MLOps pipeline designed for real-time credit card fraud detection with sub-5ms inference latency. The system features an ONNX-powered FastAPI backend, an interactive Streamlit monitoring dashboard, automated SQLite audit logging, full Docker Compose containerization, and a GitHub Actions CI pipeline
+A production-grade MLOps pipeline designed for real-time credit card fraud detection around 8ms inference latency. The system features an ONNX-powered FastAPI backend, an interactive Streamlit monitoring dashboard, automated SQLite audit logging, full Docker Compose containerization, and a GitHub Actions CI pipeline
 
 ###  Dataset
 The pipeline is built and evaluated on the benchmark European cardholders credit card fraud dataset:
